@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wilsonow.android_sensor.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_acceleration_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5G"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_acceleration_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5G"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_acceleration_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5G"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
